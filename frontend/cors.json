@@ -1,0 +1,31 @@
+{
+    "CORSRules": [
+        {
+            "AllowedOrigins": [
+                "http://alb-cloud25f-823380760.us-east-2.elb.amazonaws.com"
+            ],
+            "AllowedMethods": [
+                "GET",
+                "PUT",
+                "POST",
+                "HEAD"
+            ],
+            "AllowedHeaders": [
+                "Content-Type",
+                "x-amz-meta-userid",
+                "x-amz-security-token",
+                "Authorization",
+                "x-amz-date",
+                "x-amz-content-sha256",
+                "host",
+                "*"
+            ],
+            "ExposeHeaders": [
+                "ETag",
+                "x-amz-meta-userid",
+                "Access-Control-Allow-Origin"
+            ],
+            "MaxAgeSeconds": 3000
+        }
+    ]
+}

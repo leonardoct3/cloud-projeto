@@ -1,0 +1,25 @@
+.env
+*.pem
+
+
+
+
+site/api/# Ignore nested repositories
+# Node modules (if any)
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Don't ignore submodule directories
+!api/
+!site/

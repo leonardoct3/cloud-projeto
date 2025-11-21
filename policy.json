@@ -1,0 +1,10 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[{
+    "Sid":"AWSLoadBalancerWrite",
+    "Effect":"Allow",
+    "Principal":{"Service":"delivery.logs.amazonaws.com"},
+    "Action":"s3:PutObject",
+    "Resource":"arn:aws:s3:::cloud25f-alb-logs/AWSLogs/667181422998/*"
+  }]
+}

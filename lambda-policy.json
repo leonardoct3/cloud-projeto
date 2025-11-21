@@ -1,0 +1,31 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect":"Allow",
+      "Action":[
+        "s3:GetObject",
+        "s3:GetObjectVersion"
+      ],
+      "Resource":["arn:aws:s3:::site-cloud25f-uploads/*"]
+    },
+    {
+      "Effect":"Allow",
+      "Action":[
+        "dynamodb:PutItem",
+        "dynamodb:BatchWriteItem",
+        "dynamodb:UpdateItem"
+      ],
+      "Resource":["arn:aws:dynamodb:*:*:table/Images"]
+    },
+    {
+      "Effect":"Allow",
+      "Action":[
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource":"arn:aws:logs:*:*:*"
+    }
+  ]
+}
